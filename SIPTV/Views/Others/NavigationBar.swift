@@ -23,14 +23,15 @@ struct NavigationBar: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height:30)
-                    .foregroundColor(Color.white)
+                    
             }
             Spacer()
             Text(title)
                 .font(.custom(RobotoFont.bold.rawValue, size: 18))
-                .foregroundColor(Color.white)
+            
             Spacer()
         }
+        .foregroundColor(Color.white)
         }
     }
 }

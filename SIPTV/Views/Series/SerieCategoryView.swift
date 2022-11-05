@@ -15,6 +15,7 @@ struct SerieCategoryView: View {
     
     @Binding  var selectedCategory: SeriesCategory?
     @Binding  var selectedSerie: Serie?
+    var index : Int
     
     var body: some View {
         VStack{
@@ -22,21 +23,32 @@ struct SerieCategoryView: View {
                 .padding(.horizontal, 8)
             contentView
         }
+        .padding(.vertical,12)
+        .background(index % 2 == 1 ? Color.getLightColor(index: index/2) : Color.clear)
     }
     
     var headerView: some View {
         HStack{
-            Text(category.title)
-                .font(.custom(RobotoFont.bold.rawValue, size: 18))
-                .foregroundColor(Color.white)
-            Spacer()
+          
             Button{
                 selectedCategory = category
             } label:{
-                Text("Développer")
-                    .font(.custom(RobotoFont.bold.rawValue, size: 14))
-                    .foregroundColor(Color(red: 248/255, green: 10/255, blue: 10/255))
+                HStack(spacing:4){
+                
+                    Text(category.title.uppercased())
+                        .font(.custom(RobotoFont.bold.rawValue, size: 14))
+                    
+                    Image("right-arrow")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:10
+                        )
+                }
+                  
             }
+       //     .foregroundColor(Color.black)
+            .foregroundColor(index % 2 == 1 ?  Color.black : Color.white)
+            Spacer()
         }
     }
     
@@ -53,6 +65,7 @@ struct SerieCategoryView: View {
                         SerieCell(serie:serie)
                             .frame(width: 100, height: 150)
                             .clipped()
+                            .cornerRadius(5)
                     }
                     .padding(.leading,8)
                 }

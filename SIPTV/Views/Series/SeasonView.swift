@@ -11,31 +11,40 @@ struct SeasonView: View {
     
     var sections : [String]
     @Binding var selectedSection : String
-    var action : ()->()
+   
     
     var body: some View {
-        ScrollView(.horizontal){
+        ScrollView(.horizontal,showsIndicators: false){
             let gridItemLayout = [GridItem(.flexible())]
             LazyHGrid(rows:gridItemLayout){
-                HStack(spacing:20){
-                    ForEach(sections,id:\.self){section in
+                HStack(spacing:12){
+                        ForEach(Array(zip(sections.indices, sections)), id: \.0) { index, section in
                         Button{
                             selectedSection = section
-                            action()
+                         
                         }label:{
                             VStack(spacing:4){
                                 Text(section)
-                                
+                                    .font(.custom(RobotoFont.bold.rawValue, size: 14))
+                                    .foregroundColor(Color.white)
                                 Rectangle()
                                     .strokeBorder(Color.red,lineWidth: 0)
-                                    .background(selectedSection == section ? Color.red: Color.clear)
+                                    .background(selectedSection == section ? Color.lightBlue: Color.clear)
                                     .frame(height: 5)
+                                    .cornerRadius(.infinity)
                                 
                             }
+                            .padding(.vertical, 4)
+                            .padding(.horizontal, 8)
+//                            .background(Color.getLightColor(index: index))
+//                            .cornerRadius(.infinity)
                            
                         }
                     }
                 }
+                .padding(.vertical,8)
+                .padding(.horizontal,16)
+                
             }
         }
     }

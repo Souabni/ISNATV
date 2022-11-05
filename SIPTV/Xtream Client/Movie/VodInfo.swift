@@ -35,7 +35,7 @@ struct VodInfo: Codable{
         var genre: String?
         var backdropPath: [String]?
         var durationSecs: Any?
-        var bitrate: Int?
+        var bitrate: IntString?
         var rating: String?
         var status: String?
         var runtime: String?

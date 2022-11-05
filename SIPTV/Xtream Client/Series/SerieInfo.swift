@@ -20,12 +20,12 @@ struct SerieInfo: Codable{
 
 
 struct SeasonInfo: Codable{
-    var id : Int?
+    var id : IntString?
     var name : String?
     var airDate : String?
-    var episodeCount : Int?
+    var episodeCount : IntString?
     var overview : String?
-    var seasonNumber : Int?
+    var seasonNumber : IntString?
     var cover : String?
     var coverBig : String?
     

@@ -37,8 +37,9 @@ struct MoviesView: View {
                     .frame(height: 84)
                 let gridItemLayout = [GridItem(.flexible())]
                 LazyVGrid(columns: gridItemLayout){
-                    ForEach(currentSession.moviesCategories,id:\.title){category in
-                        MovieCategoryView(category: category,selectedCategory: selectedCategoryBinding, selectedMovie: selectedMovieBinding)
+                    ForEach(Array(zip(currentSession.moviesCategories.indices, currentSession.moviesCategories)), id: \.0) { index, category in
+                        MovieCategoryView(category: category,selectedCategory: selectedCategoryBinding, selectedMovie: selectedMovieBinding,index:index)
+                            
                     }
                 }
                 Spacer()
@@ -48,7 +49,7 @@ struct MoviesView: View {
                 }
             }
         }
-        .background(Color.black)
+        .background(Color.darkBG)
         .fullScreenCover(isPresented: $displayMovie) {
             if let selectedMovie = self.selectedMovie{
                 MovieDetailsView(selectedMovie: selectedMovie)

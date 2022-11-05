@@ -36,9 +36,10 @@ struct SeriesView: View {
                 Spacer()
                     .frame(height: 84)
                 let gridItemLayout = [GridItem(.flexible())]
+                
                 LazyVGrid(columns: gridItemLayout){
-                    ForEach(currentSession.seriesCategories,id:\.title){category in
-                        SerieCategoryView(category: category, selectedCategory: selectedCategoryBinding, selectedSerie: selectedSerieBinding)
+                    ForEach(Array(zip(currentSession.seriesCategories.indices, currentSession.seriesCategories)), id: \.0) { index, category in
+                        SerieCategoryView(category: category, selectedCategory: selectedCategoryBinding, selectedSerie: selectedSerieBinding, index:index)
                     }
                 }
                 Spacer()
@@ -48,7 +49,7 @@ struct SeriesView: View {
                 }
             }
         }
-        .background(Color.black)
+        .background(Color.darkBG)
         .fullScreenCover(isPresented: $displaySerie) {
             if let selectedSerie = self.selectedSerie{
                 SerieDetailsView(serieDetailsVM: SerieDetailsViewModel(selectedSerie: selectedSerie))

@@ -19,7 +19,7 @@ struct LiveStream: Codable{
     var categoryID: String?
     var tvArchive: Int?
     var directSource: String?
-  //  var tvArchiveDuration: Int?
+    var tvArchiveDuration: IntString?
     
     public enum CodingKeys: String, CodingKey {
         case num
@@ -30,9 +30,9 @@ struct LiveStream: Codable{
         case epgChannelID = "epg_channel_id"
         case added
         case categoryID = "category_id"
-      case tvArchive = "tv_archive"
+        case tvArchive = "tv_archive"
         case directSource = "direct_source"
-      //  case tvArchiveDuration = "tv_archive_duration"
+        case tvArchiveDuration = "tv_archive_duration"
        }
     
 }

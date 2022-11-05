@@ -24,21 +24,16 @@ struct MainView: View {
                 }
                 
                 SectionsBarView(section: $selectedSection)
-                    .frame(width:geometry.size.width*4/5, height:84)
-                    .padding(.bottom,30)
+                    .frame( height:84)
+                    .padding(.horizontal,0)
+                    .padding(.bottom,0)
                    
             }
             .navigationBarHidden(true)
             .ignoresSafeArea()
         }
-        .enableLightStatusBar()
         }
+        .enableLightStatusBar()
         
-    }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
     }
 }

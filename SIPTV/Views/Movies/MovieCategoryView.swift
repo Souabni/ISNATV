@@ -14,6 +14,7 @@ struct MovieCategoryView: View {
     
     @Binding  var selectedCategory: MoviesCategory?
     @Binding  var selectedMovie: Movie?
+    var index : Int
     
     var body: some View {
         VStack{
@@ -21,22 +22,34 @@ struct MovieCategoryView: View {
                 .padding(.horizontal, 8)
             contentView
         }
+        .padding(.vertical,12)
+        .background(index % 2 == 1 ? Color.getLightColor(index: index/2) : Color.clear)
     }
     
     var headerView: some View {
         HStack{
-            Text(category.title)
-                .font(.custom(RobotoFont.bold.rawValue, size: 18))
-                .foregroundColor(Color.white)
-            Spacer()
+           
+        
             Button{
                 selectedCategory = category
             } label:{
-                Text("Développer")
-                    .font(.custom(RobotoFont.bold.rawValue, size: 14))
-                    .foregroundColor(Color(red: 248/255, green: 10/255, blue: 10/255))
+                HStack(spacing:4){
+                
+                    Text(category.title.uppercased())
+                        .font(.custom(RobotoFont.bold.rawValue, size: 14))
+                    
+                    Image("right-arrow")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:10
+                        )
+                }
+               
             }
+            Spacer()
         }
+        .foregroundColor(index % 2 == 1 ?  Color.black : Color.white)
+       // .foregroundColor(Color.black)
     }
     
     var contentView: some View{
@@ -51,6 +64,7 @@ struct MovieCategoryView: View {
                     } label:{
                         MovieCell(movie:movie)
                             .frame(width: 100, height: 150)
+                            .cornerRadius(5)
                     }
                     .padding(.leading,8)
                 }

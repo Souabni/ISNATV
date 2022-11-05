@@ -23,7 +23,16 @@ struct MovieCategoryDetailsView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
                 .frame(width:geometry.size.width,height:94)
-                .background(Color.black)
+                .background(
+                        Rectangle()
+                            .fill(Color.darkBG)
+                            .shadow(
+                                color: Color.gray.opacity(0.7),
+                                radius: 1,
+                                x: 0,
+                                y: 0
+                             )
+                    )
                 
                 if let category = category {
                     
@@ -44,14 +53,14 @@ struct MovieCategoryDetailsView: View {
                         .frame(width:geometry.size.width)
                         
                     }
-                    .background(Color.black)
+                    .background(Color.darkBG)
                     .ignoresSafeArea()
                 }
             }
         }
         .navigationBarHidden(true)
         .ignoresSafeArea()
-        .sheet(isPresented: $displayMovie) {
+        .fullScreenCover(isPresented: $displayMovie) {
             if let selectedMovie = selectedMovie{
                 MovieDetailsView(selectedMovie: selectedMovie)
             }

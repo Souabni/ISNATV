@@ -26,9 +26,9 @@ import Foundation
 
 struct SeriesStream: Codable{
     
-    var num : Int?
+    var num : IntString?
     var name: String?
-    var seriesID: Int?
+    var seriesID: IntString?
     var cover: String?
     var plot: String?
     var cast: String?
@@ -37,7 +37,7 @@ struct SeriesStream: Codable{
     var releaseDate: String?
     var lastModified: String?
     var rating: String?
-    var rating5based: Double?
+    var rating5based: DoubleString?
    // var backdropPath: [String]?
     var youtubeTrailer: String?
     var episodeRunTime: String?

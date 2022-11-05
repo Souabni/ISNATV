@@ -12,13 +12,13 @@ import Foundation
 
 struct MovieStream: Codable{
    
-    var num: Int?
+    var num: IntString?
     var name: String?
     var streamType: String?
-    var streamID: Int?
+    var streamID: IntString?
     var streamIcon: String?
-//    var rating: Double?
-    var rating5based : Double?
+    var rating: DoubleString?
+    var rating5based : DoubleString?
     var added: String?
     var categoryId: String?
     var containerExtension: String?
@@ -42,3 +42,78 @@ struct MovieStream: Codable{
 }
 
 
+enum IntString: Codable {
+    case int(Int)
+    case string(String)
+
+    var value : Int?{
+        switch self {
+        case .int(let v): return v
+        default: return nil
+        }
+    }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .int(let v): try container.encode(v)
+        case .string(let v): try container.encode(v)
+        }
+    }
+
+    init(from decoder: Decoder) throws {
+        let value = try decoder.singleValueContainer()
+
+        if let v = try? value.decode(Int.self) {
+            self = .int(v)
+            return
+        } else if let v = try? value.decode(String.self), let int = Int(v) {
+            self = .int(int)
+            return
+        }
+
+        throw IntString.ParseError.notRecognizedType(value)
+    }
+
+    enum ParseError: Error {
+        case notRecognizedType(Any)
+    }
+}
+
+enum DoubleString: Codable {
+    case double(Double)
+    case string(String)
+
+    var value : Double?{
+        switch self {
+        case .double(let v): return v
+        default:  return nil
+        }
+    }
+    
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        switch self {
+        case .double(let v): try container.encode(v)
+        case .string(let v): try container.encode(v)
+        }
+    }
+
+    init(from decoder: Decoder) throws {
+        let value = try decoder.singleValueContainer()
+
+        if let v = try? value.decode(Double.self) {
+            self = .double(v)
+            return
+        } else if let v = try? value.decode(String.self), let double = Double(v) {
+            // self = .string(v)
+            self = .double(double)
+            return
+        }
+
+        throw DoubleString.ParseError.notRecognizedType(value)
+    }
+
+    enum ParseError: Error {
+        case notRecognizedType(Any)
+    }
+}

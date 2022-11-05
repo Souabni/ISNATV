@@ -16,7 +16,6 @@ struct SectionsBarView: View {
         GeometryReader { geometry in
             
             HStack{
-               
                 Button{
                     section = .movies
                 } label:{
@@ -62,16 +61,16 @@ struct SectionsBarView: View {
                         Text("Profils")
                     }
                 }
-               
             }
             .padding(.horizontal,16)
+            .padding(.bottom,16)
             .foregroundColor(Color.white)
             .font(.custom(RobotoFont.bold.rawValue, size: 12))
             .frame(width: geometry.size.width, height: geometry.size.height)
         }
-        .background(.ultraThinMaterial)
-        .cornerRadius(20)
-        
+        //.background(.ultraThinMaterial)
+        .background(Color.darkBG)
+        .cornerRadius(20, corners: [.topLeft,.topRight])
     }
 }
 

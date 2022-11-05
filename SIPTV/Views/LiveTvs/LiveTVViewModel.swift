@@ -11,9 +11,10 @@ class LiveTVViewModel: ObservableObject{
     
     @Published var selectedTV : LiveTV?
     @Published var displayTV : Bool = false
+    @Published var selectedCategory : LiveTVCategory?
     
     init(){
-        
+  
     }
     
 }

@@ -12,17 +12,26 @@ class Movie : ObservableObject{
     var name : String
     var iconUrl: String
     var url: String
-    @Published var info: VodInfo?
+    @Published var genres: [String] = []
+    @Published var info: VodInfo?{
+        didSet{
+            if let genre = info?.info?.genre{
+                self.genres = genre.split(separator: ",").map{String($0)}
+            }
+         
+        }
+    }
     
     init(movieStream:MovieStream, movieUrlBase: String){
-        self.movieID = movieStream.streamID ?? 0
+        self.movieID = movieStream.streamID?.value ?? 0
         self.name = movieStream.name ?? ""
        
         self.iconUrl = movieStream.streamIcon ?? ""
        
-        let videoID = movieStream.streamID ?? 0
+        let videoID = movieStream.streamID?.value ?? 0
         let containerExtension = movieStream.containerExtension ?? "mp4"
         self.url = "\(movieUrlBase)\(videoID).\(containerExtension)"
+       
         
     }
     
