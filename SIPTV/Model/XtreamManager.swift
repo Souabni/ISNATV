@@ -13,38 +13,38 @@ class XtreamManager: ObservableObject{
     
     var profils : [Profil] = [
         Profil(title: "orca",
-                                     link: "http://556677.ovh:25461",
-                                     userName: "hn8rr4tp",
-                                     password: "opjmhaga"),
+                                     link: "",
+                                     userName: "",
+                                     password: ""),
                               Profil(title: "OTT",
-                                     link: "http://ott-pro.tn:5475",
-                                     userName: "AZ142665789353",
-                                     password: "AZ142665789353")
+                                     link: "",
+                                     userName: "",
+                                     password: "")
                                                             ,
                                                             Profil(title: "orca2",
-                                                                                                             link: "http://556677.ovh:25461",
-                                                                                                             userName: "hn8rr4tp",
-                                                                                                             password: "opjmhaga"),
+                                                                                                             link: "",
+                                                                                                             userName: "",
+                                                                                                             password: ""),
                                                                                       Profil(title: "OTT2",
-                                                                                                                                       link: "http://ott-pro.tn:5475",
-                                                                                                                                       userName: "AZ142665789353",
-                                                                                                                                       password: "AZ142665789353"),
-                                                            Profil(title: "orca3",
-                                                                                                             link: "http://556677.ovh:25461",
-                                                                                                             userName: "hn8rr4tp",
-                                                                                                             password: "opjmhaga"),
+                                                                                                                                       link: "",
+                                                                                                                                       userName: "",
+                                                                                                                                       password: ""),
+                                                            Profil(title: "",
+                                                                                                             link: "",
+                                                                                                             userName: "",
+                                                                                                             password: ""),
                                                                                       Profil(title: "OTT3",
-                                                                                                                                       link: "http://ott-pro.tn:5475",
-                                                                                                                                       userName: "AZ142665789353",
-                                                                                                                                       password: "AZ142665789353"),
-                                                            Profil(title: "orca4",
-                                                                                                             link: "http://556677.ovh:25461",
-                                                                                                             userName: "hn8rr4tp",
-                                                                                                             password: "opjmhaga"),
+                                                                                                                                       link: "",
+                                                                                                                                       userName: "",
+                                                                                                                                       password: ""),
+                                                            Profil(title: "",
+                                                                                                             link: "",
+                                                                                                             userName: "",
+                                                                                                             password: ""),
                                                                                       Profil(title: "OTT4",
-                                                                                                                                       link: "http://ott-pro.tn:5475",
-                                                                                                                                       userName: "AZ142665789353",
-                                                                                                                                       password: "AZ142665789353")
+                                                                                                                                       link: "",
+                                                                                                                                       userName: "",
+                                                                                                                                       password: "")
     ]
     
     
@@ -52,9 +52,9 @@ class XtreamManager: ObservableObject{
     @Published var currentSession = XtreamSession(profil:
                                                     //Profil()
                                                     Profil(title: "orca",
-                                                                     link: "http://556677.ovh:25461",
-                                                                     userName: "hn8rr4tp",
-                                                                     password: "opjmhaga")
+                                                                     link: "",
+                                                                     userName: "",
+                                                                     password: "")
     )
     
     private init() {

@@ -24,7 +24,6 @@
 		9D676E1528C5194200192DC5 /* LiveTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D676E1428C5194200192DC5 /* LiveTV.swift */; };
 		9D676E1728C51E9000192DC5 /* tvView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D676E1628C51E9000192DC5 /* tvView.swift */; };
 		9D676E1928C52DCF00192DC5 /* LiveVideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D676E1828C52DCF00192DC5 /* LiveVideoPlayerView.swift */; };
-		9D93C4E128CCA4C3000C7CD0 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 9D93C4E028CCA4C3000C7CD0 /* Introspect */; };
 		9D942F4A28E07CA9000F90F0 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D942F4928E07CA9000F90F0 /* Authentication.swift */; };
 		9DA4315D28BE154600CF4A75 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4315C28BE154600CF4A75 /* Fonts.swift */; };
 		9DA4316128BE18E300CF4A75 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA4316028BE18E300CF4A75 /* Movie.swift */; };
@@ -60,8 +59,6 @@
 		D71C05A028B6C81000FBFC5C /* XtreamAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C059F28B6C81000FBFC5C /* XtreamAgent.swift */; };
 		D71C05A328B6DA5200FBFC5C /* LiveStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C05A228B6DA5200FBFC5C /* LiveStream.swift */; };
 		D71C05A528B6DF1C00FBFC5C /* MovieStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C05A428B6DF1C00FBFC5C /* MovieStream.swift */; };
-		D738807328FB121C00EC7F8C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D738807228FB121C00EC7F8C /* Kingfisher */; };
-		D74BB89328BBDA9A0028E0DC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D74BB89228BBDA9A0028E0DC /* Kingfisher */; };
 		D74BB89528BBDCB60028E0DC /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BB89428BBDCB60028E0DC /* MovieDetailsView.swift */; };
 		D74BB89728BBF9370028E0DC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BB89628BBF9370028E0DC /* VideoPlayerView.swift */; };
 		D76C4B1A28B77D610065CDCD /* SeriesStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76C4B1928B77D610065CDCD /* SeriesStream.swift */; };
@@ -86,6 +83,8 @@
 		D7B62BD429043842007014CA /* VlcPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BC929043841007014CA /* VlcPlayer.swift */; };
 		D7B62BD529043842007014CA /* VlcPlayerCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BCA29043842007014CA /* VlcPlayerCopy.swift */; };
 		D7B62BD7290438E7007014CA /* VlcPlayerCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BD6290438E7007014CA /* VlcPlayerCopyView.swift */; };
+		D7EE3C1C29E8B93C00B3FDFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D7EE3C1B29E8B93C00B3FDFE /* Kingfisher */; };
+		D7F145CA29E1EE5900C727DA /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = D7F145C929E1EE5900C727DA /* Introspect */; };
 		D7F330F628B945EB001C6E46 /* MovieCategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F330F528B945EB001C6E46 /* MovieCategoryDetailsView.swift */; };
 		D7F330F828B95BD6001C6E46 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F330F728B95BD6001C6E46 /* NavigationBar.swift */; };
 		D7F4770329072BEE009F8E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71C058928B67D0700FBFC5C /* Assets.xcassets */; };
@@ -186,9 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D738807328FB121C00EC7F8C /* Kingfisher in Frameworks */,
-				D74BB89328BBDA9A0028E0DC /* Kingfisher in Frameworks */,
-				9D93C4E128CCA4C3000C7CD0 /* Introspect in Frameworks */,
+				D7EE3C1C29E8B93C00B3FDFE /* Kingfisher in Frameworks */,
+				D7F145CA29E1EE5900C727DA /* Introspect in Frameworks */,
 				C1018E45F8E0A0BB9E21C1E7 /* Pods_XtreamIPTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,9 +498,8 @@
 			);
 			name = XtreamIPTV;
 			packageProductDependencies = (
-				D74BB89228BBDA9A0028E0DC /* Kingfisher */,
-				9D93C4E028CCA4C3000C7CD0 /* Introspect */,
-				D738807228FB121C00EC7F8C /* Kingfisher */,
+				D7F145C929E1EE5900C727DA /* Introspect */,
+				D7EE3C1B29E8B93C00B3FDFE /* Kingfisher */,
 			);
 			productName = SIPTV;
 			productReference = D71C058228B67D0500FBFC5C /* XtreamIPTV.app */;
@@ -534,9 +531,8 @@
 			);
 			mainGroup = D71C057928B67D0500FBFC5C;
 			packageReferences = (
-				D74BB89128BBDA9A0028E0DC /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				9D93C4DF28CCA4C3000C7CD0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
-				D738807128FB121C00EC7F8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				D7EE3C1A29E8B93C00B3FDFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D71C058328B67D0500FBFC5C /* Products */;
 			projectDirPath = "";
@@ -822,8 +818,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -858,8 +854,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -899,15 +895,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9D93C4DF28CCA4C3000C7CD0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
-			};
-		};
-		D738807128FB121C00EC7F8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		D7EE3C1A29E8B93C00B3FDFE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -915,31 +903,26 @@
 				kind = branch;
 			};
 		};
-		D74BB89128BBDA9A0028E0DC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D93C4E028CCA4C3000C7CD0 /* Introspect */ = {
+		D7EE3C1B29E8B93C00B3FDFE /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D93C4DF28CCA4C3000C7CD0 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			package = D7EE3C1A29E8B93C00B3FDFE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D7F145C929E1EE5900C727DA /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
-		};
-		D738807228FB121C00EC7F8C /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D738807128FB121C00EC7F8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		D74BB89228BBDA9A0028E0DC /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D74BB89128BBDA9A0028E0DC /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
