@@ -7,34 +7,18 @@
 
 import SwiftUI
 
-
 @main
 struct SIPTVApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    @StateObject var xtreamManager = XtreamManager.shared
-  
-    @StateObject var appState = AppState()
+    
     
     var body: some Scene {
         WindowGroup {
-            switch  appState.navigationSection {
-            case .mainView:
-                MainView()
-                    .environmentObject(xtreamManager.currentSession)
-                    .environmentObject(appState)
-                
-            case .profilsView:
-                ProfilsView(navigationSection: $appState.navigationSection, xtreamManager: xtreamManager)
-                    .environmentObject(appState)
-        
-            case .loginView:
-                LoginView()
-                    .environmentObject(appState)
-         
-            case .xtreamLoginView:
-                XtreamLoginView()
-                    .environmentObject(appState)
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                IPADMainView()
+            }else{
+                IPhoneMainView()
             }
         }
         

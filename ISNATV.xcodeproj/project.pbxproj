@@ -83,6 +83,8 @@
 		D7B62BD429043842007014CA /* VlcPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BC929043841007014CA /* VlcPlayer.swift */; };
 		D7B62BD529043842007014CA /* VlcPlayerCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BCA29043842007014CA /* VlcPlayerCopy.swift */; };
 		D7B62BD7290438E7007014CA /* VlcPlayerCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B62BD6290438E7007014CA /* VlcPlayerCopyView.swift */; };
+		D7CEB1F329E9FC0A000C381D /* IPADMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CEB1F229E9FC0A000C381D /* IPADMainView.swift */; };
+		D7CEB1F629E9FECE000C381D /* IPhoneMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CEB1F529E9FECE000C381D /* IPhoneMainView.swift */; };
 		D7EE3C1C29E8B93C00B3FDFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D7EE3C1B29E8B93C00B3FDFE /* Kingfisher */; };
 		D7F145CA29E1EE5900C727DA /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = D7F145C929E1EE5900C727DA /* Introspect */; };
 		D7F330F628B945EB001C6E46 /* MovieCategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F330F528B945EB001C6E46 /* MovieCategoryDetailsView.swift */; };
@@ -176,6 +178,8 @@
 		D7B62BC929043841007014CA /* VlcPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VlcPlayer.swift; sourceTree = "<group>"; };
 		D7B62BCA29043842007014CA /* VlcPlayerCopy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VlcPlayerCopy.swift; sourceTree = "<group>"; };
 		D7B62BD6290438E7007014CA /* VlcPlayerCopyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VlcPlayerCopyView.swift; sourceTree = "<group>"; };
+		D7CEB1F229E9FC0A000C381D /* IPADMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPADMainView.swift; sourceTree = "<group>"; };
+		D7CEB1F529E9FECE000C381D /* IPhoneMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPhoneMainView.swift; sourceTree = "<group>"; };
 		D7F330F528B945EB001C6E46 /* MovieCategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategoryDetailsView.swift; sourceTree = "<group>"; };
 		D7F330F728B95BD6001C6E46 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -363,6 +367,8 @@
 		D71C057928B67D0500FBFC5C = {
 			isa = PBXGroup;
 			children = (
+				D7CEB1F429E9FEAD000C381D /* iPhone */,
+				D7CEB1F129E9FB6E000C381D /* iPad */,
 				D79396FD29054B1B00B85BE9 /* Global */,
 				D7B62BBD290437F5007014CA /* VLC */,
 				D71C058428B67D0500FBFC5C /* SIPTV */,
@@ -477,6 +483,22 @@
 				D7B62BBE2904383A007014CA /* XtreamIPTV-Bridging-Header.h */,
 			);
 			path = VLC;
+			sourceTree = "<group>";
+		};
+		D7CEB1F129E9FB6E000C381D /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				D7CEB1F229E9FC0A000C381D /* IPADMainView.swift */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		D7CEB1F429E9FEAD000C381D /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				D7CEB1F529E9FECE000C381D /* IPhoneMainView.swift */,
+			);
+			path = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +648,7 @@
 				9DD0254328C2A35C00360DFD /* Season.swift in Sources */,
 				D76C4B2528B7ECC30065CDCD /* LiveTVView.swift in Sources */,
 				D7B62BD429043842007014CA /* VlcPlayer.swift in Sources */,
+				D7CEB1F329E9FC0A000C381D /* IPADMainView.swift in Sources */,
 				D74BB89528BBDCB60028E0DC /* MovieDetailsView.swift in Sources */,
 				D7B62BCF29043842007014CA /* VLCVideoPlayerView.swift in Sources */,
 				D76C4B2D28B7F0A50065CDCD /* XtreamSession.swift in Sources */,
@@ -667,6 +690,7 @@
 				9DA4315D28BE154600CF4A75 /* Fonts.swift in Sources */,
 				D71C058628B67D0500FBFC5C /* SIPTVApp.swift in Sources */,
 				D76C4B2828B7ED170065CDCD /* SectionsBarView.swift in Sources */,
+				D7CEB1F629E9FECE000C381D /* IPhoneMainView.swift in Sources */,
 				D76C4B1A28B77D610065CDCD /* SeriesStream.swift in Sources */,
 				9D35712228C64F9F005A62C5 /* ProfilsView.swift in Sources */,
 				D7B62BD529043842007014CA /* VlcPlayerCopy.swift in Sources */,
