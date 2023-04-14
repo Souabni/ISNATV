@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F66510A08FE6166FFA4D12B /* libPods-XtreamIPTV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2595715D1CCC308FC1A46437 /* libPods-XtreamIPTV.a */; };
 		9D04A0F728C0F8360032E2BB /* SeriesCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04A0F628C0F8360032E2BB /* SeriesCategory.swift */; };
 		9D04A0F928C0F84E0032E2BB /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04A0F828C0F84E0032E2BB /* Serie.swift */; };
 		9D04A0FB28C0F96D0032E2BB /* SerieCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D04A0FA28C0F96D0032E2BB /* SerieCategoryView.swift */; };
@@ -51,7 +52,6 @@
 		9DD0254128C29EE800360DFD /* SerieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0254028C29EE800360DFD /* SerieDetailsViewModel.swift */; };
 		9DD0254328C2A35C00360DFD /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0254228C2A35C00360DFD /* Season.swift */; };
 		9DD0254528C2A46500360DFD /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD0254428C2A46500360DFD /* Episode.swift */; };
-		C1018E45F8E0A0BB9E21C1E7 /* Pods_XtreamIPTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768DA288FA239E0267D12978 /* Pods_XtreamIPTV.framework */; };
 		D71C058628B67D0500FBFC5C /* SIPTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C058528B67D0500FBFC5C /* SIPTVApp.swift */; };
 		D71C058D28B67D0700FBFC5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71C058C28B67D0700FBFC5C /* Preview Assets.xcassets */; };
 		D71C059C28B6B32400FBFC5C /* Profil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71C059B28B6B32400FBFC5C /* Profil.swift */; };
@@ -92,9 +92,9 @@
 
 /* Begin PBXFileReference section */
 		1F5CF41219397F766D0FE29A /* Pods-XtreamIPTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XtreamIPTV.debug.xcconfig"; path = "Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV.debug.xcconfig"; sourceTree = "<group>"; };
+		2595715D1CCC308FC1A46437 /* libPods-XtreamIPTV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XtreamIPTV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5581871A2CF2238F8906D148 /* Pods-SIPTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPTV.release.xcconfig"; path = "Target Support Files/Pods-SIPTV/Pods-SIPTV.release.xcconfig"; sourceTree = "<group>"; };
 		5FEA581C362A2A0E843746DF /* Pods-XtreamIPTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XtreamIPTV.release.xcconfig"; path = "Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV.release.xcconfig"; sourceTree = "<group>"; };
-		768DA288FA239E0267D12978 /* Pods_XtreamIPTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XtreamIPTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D04A0F628C0F8360032E2BB /* SeriesCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCategory.swift; sourceTree = "<group>"; };
 		9D04A0F828C0F84E0032E2BB /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		9D04A0FA28C0F96D0032E2BB /* SerieCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerieCategoryView.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			files = (
 				D7EE3C1C29E8B93C00B3FDFE /* Kingfisher in Frameworks */,
 				D7F145CA29E1EE5900C727DA /* Introspect in Frameworks */,
-				C1018E45F8E0A0BB9E21C1E7 /* Pods_XtreamIPTV.framework in Frameworks */,
+				4F66510A08FE6166FFA4D12B /* libPods-XtreamIPTV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				D74BB89828BC02FC0028E0DC /* AVKit.framework */,
-				768DA288FA239E0267D12978 /* Pods_XtreamIPTV.framework */,
+				2595715D1CCC308FC1A46437 /* libPods-XtreamIPTV.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,6 +490,7 @@
 				D71C057E28B67D0500FBFC5C /* Sources */,
 				D71C057F28B67D0500FBFC5C /* Frameworks */,
 				D71C058028B67D0500FBFC5C /* Resources */,
+				BED3F8040B71A9074CDB156F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -572,6 +573,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BED3F8040B71A9074CDB156F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DA1B4729E708DF1AB5302082 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

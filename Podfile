@@ -2,11 +2,7 @@
 # platform :ios, '9.0'
 
 target 'XtreamIPTV' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for SIPTV
-
-	# pod ‘MobileVLCKit’
+  platform :ios, '8.4'
+  pod ‘MobileVLCKit’
 
 end
