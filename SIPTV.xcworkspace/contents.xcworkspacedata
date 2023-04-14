@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:XtreamIPTV.xcodeproj">
+      location = "group:/Users/dev/Documents/iOS Apps/SIPTV V1/ISNATV.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

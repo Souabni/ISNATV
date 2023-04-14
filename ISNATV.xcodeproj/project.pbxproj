@@ -140,7 +140,7 @@
 		9DD0254228C2A35C00360DFD /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 		9DD0254428C2A46500360DFD /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		A499CA7370EFCD9F4A8462BD /* Pods-SIPTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIPTV.debug.xcconfig"; path = "Target Support Files/Pods-SIPTV/Pods-SIPTV.debug.xcconfig"; sourceTree = "<group>"; };
-		D71C058228B67D0500FBFC5C /* XtreamIPTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XtreamIPTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71C058228B67D0500FBFC5C /* ISNATV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISNATV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71C058528B67D0500FBFC5C /* SIPTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIPTVApp.swift; sourceTree = "<group>"; };
 		D71C058928B67D0700FBFC5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D71C058C28B67D0700FBFC5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -375,7 +375,7 @@
 		D71C058328B67D0500FBFC5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D71C058228B67D0500FBFC5C /* XtreamIPTV.app */,
+				D71C058228B67D0500FBFC5C /* ISNATV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -482,9 +482,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D71C058128B67D0500FBFC5C /* XtreamIPTV */ = {
+		D71C058128B67D0500FBFC5C /* ISNATV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D71C059028B67D0700FBFC5C /* Build configuration list for PBXNativeTarget "XtreamIPTV" */;
+			buildConfigurationList = D71C059028B67D0700FBFC5C /* Build configuration list for PBXNativeTarget "ISNATV" */;
 			buildPhases = (
 				DA1B4729E708DF1AB5302082 /* [CP] Check Pods Manifest.lock */,
 				D71C057E28B67D0500FBFC5C /* Sources */,
@@ -496,13 +496,13 @@
 			);
 			dependencies = (
 			);
-			name = XtreamIPTV;
+			name = ISNATV;
 			packageProductDependencies = (
 				D7F145C929E1EE5900C727DA /* Introspect */,
 				D7EE3C1B29E8B93C00B3FDFE /* Kingfisher */,
 			);
 			productName = SIPTV;
-			productReference = D71C058228B67D0500FBFC5C /* XtreamIPTV.app */;
+			productReference = D71C058228B67D0500FBFC5C /* ISNATV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -521,7 +521,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D71C057D28B67D0500FBFC5C /* Build configuration list for PBXProject "XtreamIPTV" */;
+			buildConfigurationList = D71C057D28B67D0500FBFC5C /* Build configuration list for PBXProject "ISNATV" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -531,14 +531,14 @@
 			);
 			mainGroup = D71C057928B67D0500FBFC5C;
 			packageReferences = (
-				D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */,
+				D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 				D7EE3C1A29E8B93C00B3FDFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D71C058328B67D0500FBFC5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D71C058128B67D0500FBFC5C /* XtreamIPTV */,
+				D71C058128B67D0500FBFC5C /* ISNATV */,
 			);
 		};
 /* End PBXProject section */
@@ -874,7 +874,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D71C057D28B67D0500FBFC5C /* Build configuration list for PBXProject "XtreamIPTV" */ = {
+		D71C057D28B67D0500FBFC5C /* Build configuration list for PBXProject "ISNATV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D71C058E28B67D0700FBFC5C /* Debug */,
@@ -883,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D71C059028B67D0700FBFC5C /* Build configuration list for PBXNativeTarget "XtreamIPTV" */ = {
+		D71C059028B67D0700FBFC5C /* Build configuration list for PBXNativeTarget "ISNATV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D71C059128B67D0700FBFC5C /* Debug */,
@@ -903,7 +903,7 @@
 				kind = branch;
 			};
 		};
-		D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */ = {
+		D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
 			requirement = {
@@ -921,7 +921,7 @@
 		};
 		D7F145C929E1EE5900C727DA /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */;
+			package = D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */

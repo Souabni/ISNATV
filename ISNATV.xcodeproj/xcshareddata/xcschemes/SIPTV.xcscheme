@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D71C058128B67D0500FBFC5C"
-               BuildableName = "XtreamIPTV.app"
-               BlueprintName = "XtreamIPTV"
-               ReferencedContainer = "container:XtreamIPTV.xcodeproj">
+               BuildableName = "ISNATV.app"
+               BlueprintName = "ISNATV"
+               ReferencedContainer = "container:ISNATV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D71C058128B67D0500FBFC5C"
-            BuildableName = "XtreamIPTV.app"
-            BlueprintName = "XtreamIPTV"
-            ReferencedContainer = "container:XtreamIPTV.xcodeproj">
+            BuildableName = "ISNATV.app"
+            BlueprintName = "ISNATV"
+            ReferencedContainer = "container:ISNATV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D71C058128B67D0500FBFC5C"
-            BuildableName = "XtreamIPTV.app"
-            BlueprintName = "XtreamIPTV"
-            ReferencedContainer = "container:XtreamIPTV.xcodeproj">
+            BuildableName = "ISNATV.app"
+            BlueprintName = "ISNATV"
+            ReferencedContainer = "container:ISNATV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
