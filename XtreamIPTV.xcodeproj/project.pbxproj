@@ -490,7 +490,6 @@
 				D71C057E28B67D0500FBFC5C /* Sources */,
 				D71C057F28B67D0500FBFC5C /* Frameworks */,
 				D71C058028B67D0500FBFC5C /* Resources */,
-				BBDE16D4C19DF750EEF97AD8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,7 +530,7 @@
 			);
 			mainGroup = D71C057928B67D0500FBFC5C;
 			packageReferences = (
-				D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */,
 				D7EE3C1A29E8B93C00B3FDFE /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D71C058328B67D0500FBFC5C /* Products */;
@@ -573,23 +572,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BBDE16D4C19DF750EEF97AD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XtreamIPTV/Pods-XtreamIPTV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DA1B4729E708DF1AB5302082 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -903,7 +885,7 @@
 				kind = branch;
 			};
 		};
-		D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+		D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
 			requirement = {
@@ -921,7 +903,7 @@
 		};
 		D7F145C929E1EE5900C727DA /* Introspect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			package = D7F145C829E1EE5900C727DA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect.git" */;
 			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
